@@ -74,7 +74,7 @@ Não é necessário instalar dependências, configurar banco de dados ou iniciar
 
 ## Demonstração online
 
-O projeto poderá ser publicado gratuitamente pelo **GitHub Pages**. Após a publicação, inclua nesta seção o link da demonstração.
+🚀 [Acessar o AutoTech](https://arielgcoleto.github.io/AutoTech/)
 
 ## Observação
 
