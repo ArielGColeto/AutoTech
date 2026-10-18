@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoTech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="topo">
+        <h1>AutoTech</h1>
+        <nav class="menu-topo">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#orcamento">Orçamento</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="apresentacao" id="inicio">
+            <h1>AutoTech</h1>
+            <p>Na AutoTech cuidamos do seu veiculo com serviços de manutenção, revisao e reparos
+                sempre buscando qualidade e segurança
+            </p>
+            <a href="#orcamento">Orçamento</a>
+        </section>
+
+        <section class="servicos" id="servicos">
+            <h2>Nossos Serviços: </h2>
+            <div class="grade-servicos">
+                <article class="card destaque">
+                    <h3>Revisão Básica - Mais Procurado</h3>
+                    <p>Verificação dos principais itens do veiculo, como freios, pneus, fluidos e componentes de segurança</p>
+                    <p class="preco">R$250,00</p>
+                </article>
+
+                <article class="card">
+                    <h3>Alinhamento e balanceamento</h3>
+                    <p>Ajuste das rodas para melhorar a estabilidade e reduzir o desgaste dos pneus</p>
+                    <p class="preco">R$120,00</p>
+                </article>
+
+                <article class="card">
+                    <h3>Troca de óleo</h3>
+                    <p>Substituição do oleo do motor para manter o bom funcionamento e ajudar na conservação do veiculo</p>
+                    <p class="preco">R$180,00</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="orcamento" id="orcamento">
+            <h2>Orçamento: </h2>
+            <form>
+                <div>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome"  minlength="3" maxlength="60" placeholder="Ex:João da Silva" required>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+                <div>
+                    <label for="servico">Serviço Desejado:</label>
+                    <select id="servico" name="servico" required>
+                        <option value="">Escolha um serviço...</option>
+                        <option value="revisao">Revisao Básica</option>
+                        <option value="troca-oleo">Troca de oleo</option>
+                        <option value="alinhamento">Alinhamento e balanceamento</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="qtdeveic">Quantidade de veiculo(s)</label>
+                    <input type="number" id="qtdeveic" name="qtdeveic" min="1" max="10" placeholder="Ex: 1" required>
+                </div>
+                <div>
+                    <label for="servicoad">Serviço Adicional(Cobrado por veículo):</label>
+                    <select id="servicoad" name="servicoad">
+                        <option value="">Nenhum</option>
+                        <option value="revisao">Revisao Basica</option>
+                        <option value="troca-oleo">Troca de oleo</option>
+                        <option value="alinhamento">Alinhamento e balanceamento</option>
+                        <option value="lavagem">Lavagem (R$50)</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">Calcular orçamento: </button>
+                    <button type="reset">Limpar Formulario</button>
+                </div>
+
+                <div id="resultado" class="resultado">
+                    <h3>Resultado do orçamento:</h3>
+                    <p id="resultado-orcamento">Preencha o formulário para calcular o orçamento</p>
+                </div>
+            </form>
+            
+        </section>
+
+        <footer class="contato" id="contato">
+            <h2>AutoTech</h2>
+            <p>Cuidando do seu veiculo com qualidade e segurança</p>
+            <p>Telefone: (54) 99999-9999</p>
+            <p>2026 AutoTech. Todos os direitos reservados.</p>
+        </footer>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
